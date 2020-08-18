@@ -1,0 +1,236 @@
+/*General Styles*/
+html {
+    font-size: 18px;
+    font-family: "Open Sans", Arial, sans-serif;
+    /*background color - TO BE ADDED*/
+    background: #D7CEC7;
+    /*general text color - TO BE ADDED*/
+    color:  #565656;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inconsolata", "Times New Roman", monospace;
+    /*heading text color - TO BE ADDED*/
+    color: #76323F;
+}
+
+/*Header/Hamburger/Sidebar Menu*/
+.header {
+    background-color: #76323F;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 8px 6px -6px #888888;    /*box shadow only on top border*/
+    position: fixed;
+    height: 60px !important;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/*Centered Page Title*/
+#centeredTitle {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    text-decoration: none;
+}
+
+/*Sidebar Font*/
+.sidebarMenuInner li, span {
+    font-family: "Inconsolata", "Times New Roman", monospace;
+}
+
+
+/*Sidebar/Hamburger Menu*/
+#sidebarMenu {
+    background: #76323F;
+    height: 100%;
+    position: fixed;
+    user-select: none;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    z-index: 15
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+    cursor: default;
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li:hover {
+    background: rgba(0, 0, 0, 0.10);
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;     /*keep hamburger fixed*/
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    background-color: #76323F;
+    box-shadow: 0px -4px 3px #888888;     /*box shadow only on top border*/
+}
+
+footer span {
+    font-family: "Inconsolata", Arial, sans-serif;
+    color: white;
+}
+
+.fa-envelope {
+    position: absolute;     /*parent element has to be "position:relative" to make child element "position:absolute"*/
+    top: 0.50rem;     /*move it down slightly*/
+    left: 3rem;
+    color: black;
+}
+
+.fa-envelope:hover {
+    color: white;
+    transition: 1s;
+}
+
+.fa-github {
+    position: absolute;     /*parent element has to be "position:relative" to make child element "position:absolute"*/
+    top: 0.50rem;     /*move it down slightly*/
+    left: 7rem;
+    color: black;
+}
+
+.fa-github:hover {
+    color: white;
+    transition: 1s;
+}
+
+#copyright {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+
+#copyrightMobile {
+    display: none;   /*save mobile copyright footer for media queries*/
+}
+
+/*START MEDIA QUERIES*/
+/*625px*/
+@media only screen and (max-width: 625px) {
+    #copyright {
+        display: none;
+    }
+
+    #copyrightMobile {
+        display: block;
+        position: absolute;
+        bottom: 0.75rem;
+        right: 1rem;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+  
+  }

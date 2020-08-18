@@ -1,0 +1,250 @@
+/*Certification Sections*/
+.sectionWrapper h1 {
+	text-align: center;
+	padding-top: 2.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	padding-top: 1.5rem;
+	padding-bottom: 10rem;
+}
+
+.sectionText {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.sectionText h3 {
+	padding-bottom: 1rem;
+}
+
+/*Unordered Lists For Each Certification*/
+.sectionText ul {
+	width: 75%;
+	padding-bottom: 1rem;
+}
+
+.sectionText ul li {
+	margin: 1rem;
+	transition: all 1s ease; 	/*transition property in "normal" state only*/
+}
+
+.sectionText ul li:hover {
+	transform: translate(3rem, 0);
+}
+
+.sectionText ul li:nth-child(2) {
+	position: relative;
+	left: 5%;
+}
+
+.sectionText ul li:nth-child(3) {
+	position: relative;
+	left: 10%;
+}
+
+.sectionText ul li:nth-child(4) {
+	position: relative;
+	left: 15%;
+}
+
+.sectionText ul li:nth-child(5) {
+	position: relative;
+	left: 20%;
+}
+
+.sectionText ul li:nth-child(6) {
+	position: relative;
+	left: 25%;
+}
+
+/*Certification Images*/
+.section img {
+	max-width: 40%;   /*to keep images responsive*/
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 5px gray;
+}
+
+/*Syllabus Link Styling*/
+.button {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
+}
+
+/*Microsoft Access Section - Full Syllabus Link*/
+a.button.one:before, a.button.one:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	transition: all 0.3s ease;
+}
+
+a.button.one:before {
+	top: -2.5%;
+	left: -1%;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+a.button.one:after {
+	bottom: -2.5%;
+	right: -1%;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+a.button.one:hover:before, a.button.one:hover:after {
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+/*Microsoft Excel Section - Full Syllabus Link*/
+a.button.eight:before, a.button.eight:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+}
+
+a.button.eight:after {
+	height: 100%;
+	border-bottom: 2px solid black;
+	bottom: 0;
+	left: 0;
+	transition: transform 0.2s ease;
+}
+
+a.button.eight:before {
+	height: 0%;
+	border-top: 2px solid black;
+	bottom: 0;
+	left: 0;
+	transition: height .3s ease;
+}
+
+a.button.eight:hover:before {
+	height: 100%;
+	transform: scale(1.08);
+	transition: all 0.3s ease;
+}
+
+a.button.eight:hover:after {
+	transform: scale(1.08);
+	transition: transform 0.4s ease;
+}
+
+/*Codecademy Section - Full Syllabus Link*/
+a.button.three:before, a.button.three:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+a.button.three:before {
+	top: 0;
+	left: 0;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+a.button.three:after {
+	bottom: 0;
+	right: 0;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+}
+
+a.button.three:hover:before {
+	animation: first 0.3s forwards;
+	opacity: 1;
+}
+
+a.button.three:hover:after {
+	animation: second 0.3s forwards;
+}
+
+@keyframes first {
+	0% {
+		width: 0%;
+		height: 0%;
+	}
+	25% {
+		width: 100%;
+		height: 0%;
+	}
+	50% {
+		width: 100%;
+		height: 100%;
+	}
+	100% {
+		width: 100%;
+		height: 95%;
+	}
+}
+
+@keyframes second {
+	0% {
+		width: 0%;
+		height: 0%;
+	}
+	50% {
+		width: 0%;
+		height: 0%;
+	}
+	75% {
+		width: 100%;
+		height: 0%;
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		height: 95%;
+		opacity: 1;
+	}
+}
+
+/*START MEDIA QUERIES*/
+/*1000px*/
+@media only screen and (max-width: 1000px) {
+	.section {
+		flex-direction: column;
+	}
+
+	.sectionWrapper h1 {
+		padding: 2rem;
+	}
+
+	.sectionText {
+		width: 100%;
+		padding-top: 3rem;
+	}
+
+	.sectionText ul li {
+		left: -15%;
+	}
+
+	.section img {
+		max-width: 75%;	
+	}
+
+	.section a {
+		text-align: center;
+	  }
+
+}

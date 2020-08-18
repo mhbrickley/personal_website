@@ -1,0 +1,103 @@
+/*Main Page Wrapper*/
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+/*Software Blocks (ex. IDE's, Graphing Tools)*/
+.softwareBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.softwareBlock h2 {
+    padding-bottom: 3rem;
+}
+
+/*Software Block Sub-Wrapper*/
+.unitsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*Individual Software Unit (ex. Eclipse, Visual Studio Code) Write-Ups*/
+.unit {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.10;
+    transition: all 1s ease;
+    position: relative;
+    padding: 1rem;
+}
+
+.unit:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.unit img {
+    max-width: 40%;    /*to keep images responsive*/
+    max-height: 60%;   /*to keep images responsive*/
+}
+
+.unit p {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/*Graphing Tools Section*/
+.softwareBlock:nth-child(2) .unit {
+    max-width: 25%;      /*nth-child for second instance of class w/ the same name*/
+}
+
+.softwareBlock:nth-child(2) img {
+    max-width: 50%;
+}
+
+/*Build Tools Section*/
+.softwareBlock:nth-child(3) img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Object Oriented Programming Section*/
+.softwareBlock:nth-child(6) .unit {
+    max-width: 35%;
+}
+
+.softwareBlock:nth-child(6) img {
+    max-width: 40%;
+}
+
+/*START MEDIA QUERIES*/
+/*1000px*/
+@media only screen and (max-width: 1000px) {
+    .unitsWrapper {
+        flex-direction: column;
+    }
+
+    .softwareBlock h2 {
+        text-align: center;
+    }
+
+    .unit {
+        opacity: 1;
+        padding-bottom: 2rem;
+    }
+
+    .unit img {
+        max-height: 25%;
+    }
+
+}

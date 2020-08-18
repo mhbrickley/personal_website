@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Michael Brickley - Résumé">
+  <title>Michael Brickley | Résumé</title>
+  <!--favicon-->
+  <link rel="icon" href="./resources/favicon/favicon.ico" type="image/x-icon">
+  <!--style sheets-->
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/header-footer-fonts-colors.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/resume.css" type="text/css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--ScrollReveal-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <!--Header/Hamburger Menu-->
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    <span id='centeredTitle'><b>Résumé</b></span>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><span>Michael Brickley</span></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./certifications.html">Certifications</a></li>
+      <li><a href="./software.html">Software</a></li>
+      <li><a href="./resume.html">Résumé</a></li>
+    </ul>
+  </div>
+
+  <!--line breaks to push everything below header down-->
+  <br /><br /><br /><br /><br />
+
+  <!--Page Heading-->
+  <h3 id="resumeHeading" data-aos="fade-down">Please see below a downloadable PDF of my current résumé:</h3>
+
+  <!--Résumé-->
+  <div class="embeddedResume">
+    <object data="./resources/resume/resume_michael_brickley.pdf" type="application/pdf" width="50%" height="750px"></object>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <a href="mailto:michael.brickley1@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+    <a href="https://github.com/mhbrickley" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+    <!--copyright-->
+    <span id="copyright">©&nbsp;
+      <script>document.write(new Date().getFullYear());</script>&nbsp;Michael Brickley. All Rights Reserved</span>
+    <!--copyright on mobile devices-->
+    <span id="copyrightMobile">©&nbsp;
+      <script>document.write(new Date().getFullYear());</script>&nbsp;Michael Brickley<br />All Rights Reserved</span>
+  </footer>
+
+  <!--ScrollReveal-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init( {
+      delay: 100
+    });
+  </script>
+
+</body>
+
+</html>

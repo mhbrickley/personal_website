@@ -1,0 +1,17 @@
+/*Resume Section Heading*/
+#resumeHeading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+/*Resume*/
+.embeddedResume {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 10rem;
+	padding-bottom: 3rem;
+}

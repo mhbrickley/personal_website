@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Michael Brickley - Software Projects">
+  <title>Michael Brickley | Projects</title>
+  <!--favicon-->
+  <link rel="icon" href="./resources/favicon/favicon.ico" type="image/x-icon">
+  <!--style sheets-->
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/header-footer-fonts-colors.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/projects.css" type="text/css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--ScrollReveal-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <!--Header/Hamburger Menu-->
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    <span id='centeredTitle'><b>Projects</b></span>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><span>Michael Brickley</span></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./certifications.html">Certifications</a></li>
+      <li><a href="./software.html">Software</a></li>
+      <li><a href="./resume.html">Résumé</a></li>
+    </ul>
+  </div>
+
+  <!--line breaks to push everything below header down-->
+  <br /><br /><br /><br /><br />
+
+  <!--main page wrapper-->
+  <div class="sectionWrapper">
+
+    <!--Data Science: Regression Analysis-->
+    <h1 data-aos="fade-in">Linear Regression Analysis in Python</h1>
+    <div class="section" data-aos="fade-down">
+      <div class="embeddedPDF">
+        <object data="./resources/projects/regression analysis.pdf" type="application/pdf" width="85%" height="500px">
+          <embed src="./resources/projects/regression analysis.pdf" type="application/pdf" width="85%" height="500px">
+        </object>
+      </div>
+      <div class="sectionText">
+        <p>As a term project for&nbsp;<a class='courseLink' href='http://www.bu.edu/csmet/cs677/' target='__blank'>MET
+            CS 677 - Data Science w/Python,</a>
+          I performed a regression analysis of red wine; specifically, predicting the quality ratings based on a
+          scale of 0-10. I created a linear regression model utilizing Python's&nbsp;<b>scikit-learn</b>&nbsp;library,
+          while incorporating other data analysis libraries such as pandas and numpy</p>
+        <a href="https://github.com/mhbrickley/regression_analysis" target="_blank" class="button four">GitHub
+          Link&nbsp;<i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <!--Data Structures and Algorithms: Graph Algorithm-->
+    <h1 data-aos="fade-in">Graph Algorithms in Java</h1>
+    <div class="section" data-aos="fade-down">
+      <div class="embeddedPDF">
+        <object data="./resources/projects/graph algorithm.pdf" type="application/pdf" width="85%" height="500px">
+          <embed src="./resources/projects/graph algorithm.pdf" type="application/pdf" width="85%" height="500px">
+        </object>
+      </div>
+      <div class="sectionText">
+        <p>When selecting a destination in Google Maps, the question probably arises "How does Google know the shortest
+          route?". Essentially, it is a series of algorithms, akin to the term project
+          I completed for&nbsp;<a class='courseLink' href='http://www.bu.edu/csmet/academic-programs/courses/cs526/'
+            target='__blank'>MET CS 526 - Data Structures & Algorithms.</a>
+          For this project, I implemented two different algorithms to find the shortest path in a given graph</p>
+        <p>Suppose that the accompanying graph is a weighted, unidrected graph representing a network of cities. Each
+          node in the graph represents a city,
+          with the edge between two nodes representing a road connecting the two cities, and the weight of an edge
+          representing the distance between the two cities on the connecting road.
+          Given an input node, both algorithms iteratively compute the next node in a shortest path</p>
+        <p>Essentially, one algorithm looks all nodes that are adjacent to the said input node, determines the direct
+          distance of each adjacent node to the destination node, and iteratively steps through each
+          node until the destination is reached. The second algorithm is similar to the first, with the exception that
+          the weight of two nodes is included in the equation</p>
+        <a href="https://github.com/mhbrickley/graph_algorithm" target="_blank" class="button nine">GitHub Link&nbsp;<i
+            class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <!--Database Management-->
+    <h1 data-aos="fade-in">Database Creation - Conceptual & Physical&nbsp;<br>Entity Relationship Diagrams (ERD's)</h1>  <!--single line break-->
+    <div class="section" data-aos="fade-down">
+      <div class='doublePDFs'>
+        <object data="./resources/projects/conceptual ERD.pdf" type="application/pdf" width="85%" height="500px">
+          <embed src="./resources/projects/conceptual ERD.pdf" type="application/pdf" width="85%" height="500px">
+        </object>
+        <object data="./resources/projects/physical ERD.pdf" type="application/pdf" width="85%" height="500px">
+          <embed src="./resources/projects/physical ERD.pdf" type="application/pdf" width="85%" height="500px">
+        </object>
+      </div>
+      <div class="sectionText">
+        <p>Creating a database from scratch requires a great deal of planning and conceptualization. My term project
+          for&nbsp;<a class='courseLink' href='http://www.bu.edu/csmet/academic-programs/courses/cs669/'
+            target='__blank'>MET CS 699 - Database Design & Implementation for Business</a>
+          called for such a task, including the creation of conceptual, as well as physical entity relationship diagrams
+          (ERD's)</p>
+        <p>When creating these diagrams, the main components include the
+          <b>entities</b>,&nbsp;their<b>&nbsp;attributes</b>, and the&nbsp;<b>relationships</b>&nbsp;between the
+          entities.
+          The relationships between the entities were represented using Crow's Foot notation, with the database
+          structure also including normalization where appropriate</p>
+        <p>As a car enthusiast, I opted to create a database of a fictional car dealership, with typical entities you
+          would find including sales, service, and parts</p>
+      </div>
+    </div>
+
+    <!--Agile Project Development-->
+    <h1 data-aos="fade-in">Agile Project Development - Adobe XD & Trello</h1>
+    <div class="section" data-aos="fade-down">
+      <div id='agile' class="sectionText">
+        <p>While Waterfall and Rapid Prototyping are popular choices for project development, Agile has also become a
+          popular choice in recent years, due to its customer centric and change oriented approach.
+          My term project for&nbsp;<a class='courseLink'
+            href='https://www.bu.edu/csmet/academic-programs/courses/cs634/' target='__blank'>MET CS 634 - Agile Project
+            Development</a>
+          involved selecting a musical artist (in my case, Beowülf), and developing a "digital brand" for them, chiefly
+          in the name of a full service website</p>
+        <p>To manage the tasks of the project, a Trello board was utilized</p>
+        <p>When creating a prototype of the website, Abode XD was the tool of choice</p>
+        <a id='adobe' href="https://xd.adobe.com/view/597b4dda-78f8-4cb6-64bd-08042df685f9-2f4a/?fullscreen"
+          target="_blank" class="button two">Adobe XD Prototype&nbsp;<i class="fas fa-external-link-alt"></i></a>
+        <a href="https://trello.com/b/e6au1ezz/cs634group2brickley " target="_blank" class="button two">Trello
+          Board&nbsp;<i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <!--Software Design & Patterns: Design Pattern-->
+    <h1 data-aos="fade-in">Software Design & Patterns - Builder Pattern in Java</h1>
+    <div class="section" data-aos="fade-down">
+      <div class="embeddedPDF">
+        <object data="./resources/projects/UML diagram.pdf" type="application/pdf" width="85%" height="500px">
+          <embed src="./resources/projects/UML diagram.pdf" type="application/pdf" width="85%" height="500px">
+        </object>
+      </div>
+      <div class="sectionText">
+        <p>A goal of any developer is to adhere to the DRY (Don't Repeat Yourself) method. With regards to software
+          patterns, they adhere to a similar philosophy</p>
+        <p>For my term project for&nbsp;<a class='courseLink'
+            href='http://www.bu.edu/csmet/academic-programs/courses/cs665/' target='__blank'>MET CS 665 - Software
+            Design & Patterns</a>,
+          I had to select a handful of software patterns, and incoporate them into a program. The overarching pattern I
+          selected was the&nbsp;<b>Builder</b>&nbsp;pattern, but I also included
+          the&nbsp;<b>Factory</b>,<b>&nbsp;Decorator</b>,&nbsp;and&nbsp;<b>Singleton</b>&nbsp;patterns</p>
+        <p>This project was developed via Maven, which allowed for compiling, unit testing, and bug finding</p>
+        <a href="https://github.com/mhbrickley/builder_pattern" target="_blank" class="button eleven">GitHub
+          Link&nbsp;<i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <!--Web Development: johnbrickley.com-->
+    <h1 data-aos="fade-in">Web Development - www.johnbrickley.com</h1>
+    <div id='john' class="section" data-aos="fade-down">
+      <img id='graphImage' src='./resources/projects/john logo.png'>
+      <p>After learning about the fundamentals of web development, I created a website for my brother!</p>
+      <a href="https://johnbrickley.com/" target="_blank" class="button seven">www.johnbrickley.com&nbsp;<i
+          class="fas fa-external-link-alt"></i></a>
+    </div>
+
+  <!--end wrapper div-->
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <a href="mailto:michael.brickley1@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+    <a href="https://github.com/mhbrickley" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+    <!--copyright-->
+    <span id="copyright">©&nbsp;
+      <script>document.write(new Date().getFullYear());</script>&nbsp;Michael Brickley. All Rights Reserved</span>
+    <!--copyright on mobile devices-->
+    <span id="copyrightMobile">©&nbsp;
+      <script>document.write(new Date().getFullYear());</script>&nbsp;Michael Brickley<br />All Rights Reserved</span>
+  </footer>
+
+  <!--ScrollReveal-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init( {
+      delay: 100
+    });
+  </script>
+
+</body>
+
+</html>

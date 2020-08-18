@@ -1,0 +1,208 @@
+/*General Styles*/
+html {
+    font-size: 18px;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #D7CEC7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inconsolata", "Times New Roman", monospace;
+}
+
+/*Main Page Wrapper*/
+.wrapper {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    padding: 2rem; 
+    position: absolute;  /*to center div!*/
+    top:  45%;   /*to center div!*/
+    left: 50%;  /*to center div!*/
+    transform: translate(-50%,-50%);  /*to center div!*/
+}
+
+.wrapper h1 {
+    font-size: 2vw;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Projects Block*/
+#blockOne {
+    padding: 2rem 5rem 2rem 5rem;
+    height: 12.5vw;
+    width: 18.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #76323F;
+    border-radius: 0.25rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: url('https://images.freeimages.com/images/large-previews/f5c/workflow-1457844.jpg');
+    background-size: 100%;
+    transition: all 1s ease;
+}
+
+#blockOne:hover {
+    background-size: 150%;
+    border-radius: 5%;
+}
+
+/*Certifications Block*/
+#blockTwo {
+    padding: 2rem 5rem 2rem 5rem;
+    height: 12.5vw;
+    width: 18.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #76323F;
+    border-radius: 0.25rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: url('https://images.freeimages.com/images/large-previews/11b/graduation-diploma-1240310.jpg');
+    background-size: 100%;
+    transition: all 1s ease;
+}
+
+#blockTwo:hover {
+    background-size: 150%;
+    border-radius: 5%;
+}
+
+/*Software Block*/
+#blockThree {
+    padding: 2rem 5rem 2rem 5rem;
+    height: 12.5vw;
+    width: 18.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #76323F;
+    border-radius: 0.25rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: url('https://images.freeimages.com/images/large-previews/d58/cd-rom-cd-rw-hardware-software-computer-equipment-1471609.jpg');
+    background-size: 100%;
+    transition: all 1s ease;
+}
+
+#blockThree:hover {
+    background-size: 150%;
+    border-radius: 5%;
+}
+
+/*Resume Block*/
+#blockFour {
+    padding: 2rem 5rem 2rem 5rem;
+    height: 12.5vw;
+    width: 18.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #76323F;
+    border-radius: 0.25rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: url('https://images.freeimages.com/images/small-previews/c7e/resume-2-1616792.jpg');
+    background-size: 100%;
+    transition: all 1s ease;
+}
+
+#blockFour:hover {
+    background-size: 150%;
+    border-radius: 5%;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;   /*to center div!*/
+    top:  65%; /*to center div!*/
+    left: 50%; /*to center div!*/
+    transform: translate(-50%,-50%); /*to center div!*/
+} 
+
+footer span {
+    text-align: center;
+}
+
+/*START MEDIA QUERIES*/
+/*1200px*/
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7.5rem;
+    }
+
+    .wrapper h1 {
+        font-size: 3vw;
+    }
+
+    #blockOne, #blockTwo, #blockThree, #blockFour {
+        height: 18vw;
+        width: 25vw;
+    }
+
+    footer {
+        top:  120%;  /*to offset position: absolute*/
+        margin-bottom: 3rem;
+    }
+
+}
+
+/*850px*/
+@media only screen and (max-width: 850px) {
+    #blockOne, #blockTwo, #blockThree, #blockFour {
+        height: 25vw;
+        width: 32vw;
+    }
+
+    .wrapper h1 {
+        font-size: 4vw;
+    }
+
+}
+
+/*675px*/
+@media only screen and (max-width: 675px) {
+    #blockOne, #blockTwo, #blockThree, #blockFour {
+        height: 32vw;
+        width: 39vw;
+    }
+
+    .wrapper h1 {
+        font-size: 5vw;
+    }
+}
+
+/*550px*/
+@media only screen and (max-width: 550px) {
+    #blockOne, #blockTwo, #blockThree, #blockFour {
+        height: 39vw;
+        width: 46vw;
+    }
+
+    .wrapper h1 {
+        font-size: 6vw;
+    }
+}
+
+/*375px*/
+@media only screen and (max-width: 375px) {
+    #blockOne, #blockTwo, #blockThree, #blockFour {
+        height: 46vw;
+        width: 53vw;
+    }
+
+    .wrapper h1 {
+        font-size: 7vw;
+    }
+}
