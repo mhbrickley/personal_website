@@ -40,83 +40,19 @@
 /*Embedded PDF's*/
 .embeddedPDF {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*GitHub Links*/
-.button {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
-  padding: 10px;
-}
-
-/*Data Science: Regression Analysis - GitHub Link*/
-a.button.four:before, a.button.four:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  border-bottom: 2px solid black;
-  transition: width 0.3s ease;
-}
-
-a.button.four:before {
-  bottom: 0;
-  right: 50%;
-}
-
-a.button.four:after {
-  bottom: 0;
-  left: 50%;
-}
-
-a.button.four:hover:after, a.button.four:hover:before {
-  width: 40%;
-  transition: width .2s ease;
-}
-
-/*Data Structures and Algorithms: Graph Algorithm*/
-#graphImage {
-  width: 100%;
-}
-
-/*Data Structures and Algorithms: Graph Algorithm - GitHub Link*/
-a.button.nine {
-  border: 2px solid #333;
-}
-
-a.button.nine:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -2px;
-  left: -2px;
-  border: 2px solid black;
-  transform: translate(20px, -20px);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-a.button.nine:hover:after {
-  opacity: 1;
-  animation: nine 0.3s forwards;
-}
-
-@keyframes nine {
-  0% {
-    transform: translate(-20px, 20px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+#multiplePDF {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /*Database Management*/
-.doublePDFs object:nth-child(1) {
-  padding-bottom: 3rem;
+#multiplePDF object {
+  padding: 3rem;
 }
 
 
@@ -130,60 +66,14 @@ a.button.nine:hover:after {
 }
 
 
-/*Agile Project Development - GitHub Link*/
-a.button.two:before, a.button.two:after {
-  opacity: 0;
-  transition: all 0.3s ease;
-  font-size: 20px;
-}
-
-a.button.two:before {
-  content: '[';
-}
-
-a.button.two:after {
-  content: ']';
-}
-
-a.button.two:hover:before {
-  margin-right: 10px;
-  content: '[';
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  transform: translateX(20px);
-  opacity: 1;
-}
-
-a.button.two:hover:after {
-  margin-left: 10px;
-  content: ']';
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  transform: translateX(-20px);
-  opacity: 1;
-}
-
-
-/*Software Design & Patterns: Design Pattern - GitHub Link*/
-a.button.eleven {
-  border: 2px solid black;
-  transition: all 0.3s ease;
-  transform: translate(0px 10px);
-}
-
-a.button.eleven:hover {
-  box-shadow: 0px 15px 10px -10px black;
-  transform: translate(0px 0px);
-}
-
 /*Web Development - johnbrickley.com*/
 #john {
   flex-direction: column;
 }
 
 #john img {
-  width: 15%;
-  height: 10%;
+  max-width: 15%;   /*to keep image responsive*/
+  max-height: 10%;   /*to keep image responsive*/
   padding-bottom: 1.5rem;
 }
 
@@ -192,23 +82,9 @@ a.button.eleven:hover {
   text-align: center;
 }
 
-/*Web Development: www.johnbrickley.com - GitHub Link*/
-a.button.seven:after {
-  content: '';
-  width: 100%;
-  height: 85%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  border-bottom: 2px solid black;
-  opacity: 0;
-  transition: all .2s ease;
-}
-
-a.button.seven:hover:after {
-  opacity: 1;
-  height: 100%;
-  transition: all 0.3s ease;
+/*HIDE MOBILE ELEMENTS*/
+.mobilePDF {
+  display: none;
 }
 
 /*START MEDIA QUERIES*/
@@ -218,19 +94,10 @@ a.button.seven:hover:after {
     flex-direction: column-reverse;
   }
 
-  .embeddedPDF, .doublePDFs {
-    margin-left: 3.75rem;
-  }
-
 }
 
-
   /*480px*/
-@media only screen and (max-width: 1000px) {
-  .section {
-    flex-direction: column-reverse;
-  }
-
+@media only screen and (max-width: 480px) {
   .sectionWrapper h1 {
     padding: 2rem;
   }
@@ -239,12 +106,28 @@ a.button.seven:hover:after {
     text-align: center;
   }
 
-  .embeddedPDF, .doublePDFs {
-    margin-left: 3.75rem;
+  /*change PDF's to viewable link only*/
+  .embeddedPDF {
+    display: none;
   }
 
-  .embeddedPDF object, .doublePDFs object {
-    height: 300px;
+  #multiplePDF {
+    display: none;
   }
+
+  .mobilePDF {
+		display: flex;
+		align-items: center;
+    justify-content: center;
+    flex-direction: column;
+		padding: 3rem;
+	}
+
+	.mobilePDF a {
+		text-align: center;
+		text-decoration: none;
+    color: black;
+    padding: 1rem;  
+	}
 
 }

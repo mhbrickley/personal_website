@@ -5,6 +5,8 @@
 	align-items: center;
 	padding: 2rem;
 	text-align: center;
+	font-family: "Open Sans", Arial, sans-serif;
+	color:  #565656;
 }
 
 /*Resume*/
@@ -14,4 +16,36 @@
 	align-items: center;
 	top: 10rem;
 	padding-bottom: 3rem;
+}
+
+/*HIDE MOBILE ELEMENTS*/
+.mobileResume {
+	display: none;
+}
+
+/*START MEDIA QUERIES*/
+/*480px*/
+@media only screen and (max-width: 480px) {
+	/*change PDFs to link view only*/
+	.embeddedResume {
+		display: none;
+	}
+
+	.mobileResume {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem;
+	}
+
+	.mobileResume a {
+		text-align: center;
+		text-decoration: none;
+		color: black;
+	}
+
+	footer {
+		display: none;
+	}
+
 }

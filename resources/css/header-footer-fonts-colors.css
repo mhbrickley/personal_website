@@ -2,15 +2,15 @@
 html {
     font-size: 18px;
     font-family: "Open Sans", Arial, sans-serif;
-    /*background color - TO BE ADDED*/
+    /*BACKGROUND COLOR*/
     background: #D7CEC7;
-    /*general text color - TO BE ADDED*/
+    /*GENERAL TEXT COLOR*/
     color:  #565656;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Inconsolata", "Times New Roman", monospace;
-    /*heading text color - TO BE ADDED*/
+    /*HEADING TEXT COLOR*/
     color: #76323F;
 }
 
@@ -28,13 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
 }
 
-/*Centered Page Title*/
+/*Centered Title Unique to Each Page*/
 #centeredTitle {
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 /*Sidebar Font*/
@@ -219,7 +220,7 @@ footer span {
 
 /*START MEDIA QUERIES*/
 /*625px*/
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 675px) {
     #copyright {
         display: none;
     }
