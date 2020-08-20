@@ -6,11 +6,11 @@ html {
 
 body {
     min-height: 100vh;    /*the body tag by itself doesn't have any height and so the gradients won't show up*/
-    background: rgb(0,0,0);
-    background: -moz-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#d7cec7",GradientType=1);
+    background: rgb(118,50,63);
+    background: -moz-radial-gradient(circle, rgba(118,50,63,1) 25%, rgba(215,206,199,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(118,50,63,1) 25%, rgba(215,206,199,1) 100%);
+    background: radial-gradient(circle, rgba(118,50,63,1) 25%, rgba(215,206,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#76323f",endColorstr="#d7cec7",GradientType=1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid black;
+    border: 5px solid #565656;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid black;
+    border: 5px solid #565656;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid black;
+    border: 5px solid #565656;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid black;
+    border: 5px solid #565656;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
