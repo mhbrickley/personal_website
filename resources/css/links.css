@@ -14,6 +14,7 @@ a.button.four:before, a.button.four:after {
     width: 0%;
     height: 100%;
     border-bottom: 2px solid black;
+    -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
 }
 
@@ -29,6 +30,7 @@ a.button.four:after {
 
 a.button.four:hover:after, a.button.four:hover:before {
     width: 40%;
+    -webkit-transition: width .2s ease;
     transition: width .2s ease;
 }
 
@@ -45,28 +47,45 @@ a.button.nine:after {
     top: -2px;
     left: -2px;
     border: 2px solid black;
-    transform: translate(20px, -20px);
+    -webkit-transform: translate(20px, -20px);
+            transform: translate(20px, -20px);
     opacity: 0;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 a.button.nine:hover:after {
     opacity: 1;
-    animation: nine 0.3s forwards;
+    -webkit-animation: nine 0.3s forwards;
+            animation: nine 0.3s forwards;
+}
+
+@-webkit-keyframes nine {
+    0% {
+        -webkit-transform: translate(-20px, 20px);
+                transform: translate(-20px, 20px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+    }
 }
 
 @keyframes nine {
     0% {
-        transform: translate(-20px, 20px);
+        -webkit-transform: translate(-20px, 20px);
+                transform: translate(-20px, 20px);
     }
     100% {
-        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
     }
 }
 
 /*Agile Project Development - GitHub Link*/
 a.button.two:before, a.button.two:after {
     opacity: 0;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-size: 20px;
 }
@@ -83,7 +102,6 @@ a.button.two:hover:before {
     margin-right: 10px;
     content: '[';
     -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
     transform: translateX(20px);
     opacity: 1;
 }
@@ -92,7 +110,6 @@ a.button.two:hover:after {
     margin-left: 10px;
     content: ']';
     -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
     transform: translateX(-20px);
     opacity: 1;
 }
@@ -100,13 +117,16 @@ a.button.two:hover:after {
 /*Software Design & Patterns - GitHub Link*/
 a.button.eleven {
     border: 2px solid black;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    transform: translate(0px 10px);
+    -webkit-transform: translate(0px 10px);
+            transform: translate(0px 10px);
 }
 
 a.button.eleven:hover {
     box-shadow: 0px 15px 10px -10px black;
-    transform: translate(0px 0px);
+    -webkit-transform: translate(0px 0px);
+            transform: translate(0px 0px);
 }
 
 /*Web Development: www.johnbrickley.com - GitHub Link*/
@@ -119,11 +139,13 @@ a.button.seven:after {
     position: absolute;
     border-bottom: 2px solid black;
     opacity: 0;
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
 
 a.button.seven:hover:after {
     opacity: 1;
     height: 100%;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }

@@ -1,8 +1,11 @@
 /*Resume Section Heading*/
 #resumeHeading {
+	display: -webkit-box;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	padding: 2rem;
 	text-align: center;
 	font-family: "Open Sans", Arial, sans-serif;
@@ -11,9 +14,12 @@
 
 /*Resume*/
 .embeddedResume {
+	display: -webkit-box;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	top: 10rem;
 	padding-bottom: 3rem;
 }
@@ -32,9 +38,12 @@
 	}
 
 	.mobileResume {
+		display: -webkit-box;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		-webkit-box-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		        justify-content: center;
 		padding: 3rem;
 	}
 

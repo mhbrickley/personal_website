@@ -1,18 +1,26 @@
 /*Main Page Wrapper*/
 .wrapper {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 3rem;
 }
 
 /*Software Blocks (ex. IDE's, Graphing Tools)*/
 .softwareBlock {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     padding: 3rem;
 }
 
@@ -22,20 +30,31 @@
 
 /*Software Block Sub-Wrapper*/
 .unitsWrapper {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
 }
 
 /*Individual Software Unit (ex. Eclipse, Visual Studio Code) Write-Ups*/
 .unit {
     width: 50%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     opacity: 0.10;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
     position: relative;
     padding: 1rem;
@@ -43,7 +62,8 @@
 
 .unit:hover {
     opacity: 1;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .unit img {
@@ -84,7 +104,9 @@
 /*1000px*/
 @media only screen and (max-width: 1000px) {
     .unitsWrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
 
     .softwareBlock h2 {

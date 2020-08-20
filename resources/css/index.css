@@ -2,7 +2,15 @@
 html {
     font-size: 18px;
     font-family: "Open Sans", Arial, sans-serif;
-    background-color: #D7CEC7;
+}
+
+body {
+    min-height: 100vh;    /*the body tag by itself doesn't have any height and so the gradients won't show up*/
+    background: rgb(0,0,0);
+    background: -moz-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(118,50,63,1) 15%, rgba(215,206,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#d7cec7",GradientType=1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,14 +19,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Main Page Wrapper*/
 .wrapper {
+    display: -webkit-box;
     display: flex;
-    align-items: space-between;
-    justify-content: center;
+    -webkit-box-align: space-between;
+            align-items: space-between;
+    -webkit-box-pack: center;
+            justify-content: center;
     padding: 2rem; 
     position: absolute;  /*to center div!*/
     top:  45%;   /*to center div!*/
     left: 50%;  /*to center div!*/
-    transform: translate(-50%,-50%);  /*to center div!*/
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);  /*to center div!*/
 }
 
 .wrapper h1 {
@@ -35,15 +47,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 5rem 2rem 5rem;
     height: 12.5vw;
     width: 18.5vw;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #76323F;
-    border-radius: 0.25rem;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 5px solid black;
+    border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
     background: url('https://images.freeimages.com/images/large-previews/f5c/workflow-1457844.jpg');
     background-size: 100%;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -57,15 +73,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 5rem 2rem 5rem;
     height: 12.5vw;
     width: 18.5vw;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #76323F;
-    border-radius: 0.25rem;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 5px solid black;
+    border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
     background: url('https://images.freeimages.com/images/large-previews/11b/graduation-diploma-1240310.jpg');
     background-size: 100%;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -79,15 +99,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 5rem 2rem 5rem;
     height: 12.5vw;
     width: 18.5vw;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #76323F;
-    border-radius: 0.25rem;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 5px solid black;
+    border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
     background: url('https://images.freeimages.com/images/large-previews/d58/cd-rom-cd-rw-hardware-software-computer-equipment-1471609.jpg');
     background-size: 100%;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -101,15 +125,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 5rem 2rem 5rem;
     height: 12.5vw;
     width: 18.5vw;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #76323F;
-    border-radius: 0.25rem;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 5px solid black;
+    border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
     background: url('https://images.freeimages.com/images/small-previews/c7e/resume-2-1616792.jpg');
     background-size: 100%;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -120,13 +148,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Footer*/
 footer {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     position: absolute;   /*to center div!*/
     top:  65%; /*to center div!*/
     left: 50%; /*to center div!*/
-    transform: translate(-50%,-50%); /*to center div!*/
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%); /*to center div!*/
 } 
 
 footer span {
@@ -137,8 +169,11 @@ footer span {
 /*1200px*/
 @media only screen and (max-width: 1200px) {
     .wrapper {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
         margin-top: 15rem;
     }
 
@@ -165,10 +200,6 @@ footer span {
         width: 32vw;
     }
 
-    .wrapper h1 {
-        font-size: 4vw;
-    }
-
 }
 
 /*675px*/
@@ -178,9 +209,6 @@ footer span {
         width: 39vw;
     }
 
-    .wrapper h1 {
-        font-size: 5vw;
-    }
 }
 
 /*550px*/
@@ -190,9 +218,6 @@ footer span {
         width: 46vw;
     }
 
-    .wrapper h1 {
-        font-size: 6vw;
-    }
 }
 
 /*375px*/
@@ -202,7 +227,4 @@ footer span {
         width: 53vw;
     }
 
-    .wrapper h1 {
-        font-size: 7vw;
-    }
 }
