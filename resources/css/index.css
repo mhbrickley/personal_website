@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper a {
     text-decoration: none;
-    color: black;
+    color: black;   /*heaadings text*/
 }
 
 /*Projects Block*/
@@ -53,11 +53,11 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid #565656;
+    border: 3px solid black;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
-    background: url('https://images.freeimages.com/images/large-previews/f5c/workflow-1457844.jpg');
+    background: url('../index/compressed/projects.jpg');
     background-size: 100%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #blockOne:hover {
     background-size: 150%;
-    border-radius: 5%;
 }
 
 /*Certifications Block*/
@@ -79,11 +78,11 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid #565656;
+    border: 3px solid black;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
-    background: url('https://images.freeimages.com/images/large-previews/11b/graduation-diploma-1240310.jpg');
+    background: url('../index/compressed/certifications.jpg');
     background-size: 100%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -91,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #blockTwo:hover {
     background-size: 150%;
-    border-radius: 5%;
 }
 
 /*Software Block*/
@@ -105,11 +103,11 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid #565656;
+    border: 3px solid black;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
-    background: url('https://images.freeimages.com/images/large-previews/d58/cd-rom-cd-rw-hardware-software-computer-equipment-1471609.jpg');
+    background: url('../index/compressed/software.jpg');
     background-size: 100%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -117,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #blockThree:hover {
     background-size: 150%;
-    border-radius: 5%;
 }
 
 /*Resume Block*/
@@ -131,11 +128,11 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    border: 5px solid #565656;
+    border: 3px solid black;
     border-radius: 1rem;
     margin: 1.5rem;
     text-align: center;
-    background: url('https://images.freeimages.com/images/small-previews/c7e/resume-2-1616792.jpg');
+    background: url('../index/compressed/resume.jpg');
     background-size: 100%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -143,7 +140,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #blockFour:hover {
     background-size: 150%;
-    border-radius: 5%;
 }
 
 /*Footer*/
@@ -200,6 +196,10 @@ footer span {
         width: 32vw;
     }
 
+    .wrapper h1 {
+        font-size: 4vw;
+    }
+
 }
 
 /*675px*/
@@ -207,6 +207,10 @@ footer span {
     #blockOne, #blockTwo, #blockThree, #blockFour {
         height: 32vw;
         width: 39vw;
+    }
+
+    .wrapper h1 {
+        font-size: 5vw;
     }
 
 }
@@ -218,6 +222,11 @@ footer span {
         width: 46vw;
     }
 
+    .wrapper h1 {
+        font-size: 5.5vw;
+    }
+    
+
 }
 
 /*375px*/
@@ -225,6 +234,10 @@ footer span {
     #blockOne, #blockTwo, #blockThree, #blockFour {
         height: 46vw;
         width: 53vw;
+    }
+
+        .wrapper h1 {
+        font-size: 6vw;
     }
 
 }
