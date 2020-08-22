@@ -47,6 +47,8 @@
 	margin: 1rem;
 	-webkit-transition: all 1s ease;
 	transition: all 1s ease; 	/*transition property in "normal" state only*/
+	text-indent: -1rem;
+	padding-left: 1rem;
 }
 
 .sectionText ul li:hover {
