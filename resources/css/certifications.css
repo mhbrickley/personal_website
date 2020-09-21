@@ -173,7 +173,7 @@ a.button.eight:hover:after {
 	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-/*Codecademy Section - Full Syllabus Link*/
+/*Codecademy Section - Full Syllabus Link
 a.button.three:before, a.button.three:after {
 	content: '';
 	position: absolute;
@@ -286,6 +286,7 @@ a.button.three:hover:after {
 		opacity: 1;
 	}
 }
+*/
 
 /*START MEDIA QUERIES*/
 /*1000px*/

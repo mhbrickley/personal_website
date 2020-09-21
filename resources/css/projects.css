@@ -82,21 +82,22 @@
 }
 
 
-/*Web Development - johnbrickley.com*/
-#john {
+/*Web Development - Codecademy*/
+#codecademy {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
 }
 
-#john img {
-  max-width: 15%;   /*to keep image responsive*/
-  max-height: 10%;   /*to keep image responsive*/
+#codecademy img {
+  max-width: 25%;   /*to keep image responsive*/
+  max-height: 15%;   /*to keep image responsive*/
   padding-bottom: 1.5rem;
 }
 
-#john p {
-  padding: 1.5rem;
+#codecademy p {
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  line-height: 2rem;
   text-align: center;
 }
 
